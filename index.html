@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title></title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+          <input type="text" id="input-el">
+          <table>
+              <tr>
+          <td><button class="op"  onclick="inputEl.value =''">AC</button></td>
+          <td><button class="op" onclick="inputEl.value =inputEl.value.substring(0, inputEl.value.length - 1)">D</button></td>
+          <td><button class="op" onclick="inputEl.value +='/'">/</button></td>
+          <td><button class="op" onclick="inputEl.value +='*'">*</button></td>
+              </tr>
+          <tr>
+          <td><button onclick="inputEl.value +='7'">7</button></td>
+          <td><button onclick="inputEl.value +='8'">8</button></td>
+          <td><button onclick="inputEl.value +='9'">9</button></td>
+          <td><button class="op" onclick="inputEl.value +='-'">-</button></td>
+          </tr>
+          <tr>
+          <td><button onclick="inputEl.value +='4'">4</button></td>
+          <td><button onclick="inputEl.value +='5'">5</button></td>
+          <td><button onclick="inputEl.value +='6'">6</button></td>
+          <td><button class="op" onclick="inputEl.value +='+'">+</button></td>
+          </tr>
+          <tr>
+          <td><button onclick="inputEl.value +='1'">1</button></td>
+          <td><button onclick="inputEl.value +='2'">2</button></td>
+          <td><button onclick="inputEl.value +='3'">3</button></td>
+          <td rowspan="2"><button id="equal" onclick="inputEl.value =eval(inputEl.value)">=</button></td>
+          </tr>
+           <tr>   
+          <td><button onclick="inputEl.value +='00'">00</button></td>
+          <td><button onclick="inputEl.value +='0'">0</button></td>
+          <td><button onclick="inputEl.value +='.'">.</button></td>
+           </tr>
+          </table>
+        <script src="index.js"></script>
+        
+    </body>
+</html>
